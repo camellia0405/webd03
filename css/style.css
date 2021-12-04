@@ -1,0 +1,686 @@
+@charset "utf-8";
+
+body{
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+
+a{
+    text-decoration: none ;
+    color: #fff;
+}
+
+a:hover{
+    opacity: 0.5 ;
+}
+
+.hamburgerMenu {
+    display : none;
+}
+
+.hamburgerMenuButtom {
+    display: none;
+}
+
+.hamburgerMenuSP{
+    display: none;
+}
+
+/*ヘッダー*/
+
+.topLogo{
+    width: 100%;
+}
+
+/*メイン*/
+.mainContents{
+    display: flex;
+}
+
+.pcImg{
+    width: 100%;
+    vertical-align: top;
+}
+
+.topLogoImg{
+    min-width: 5rem;
+    max-width: 5rem;
+    margin: 2rem;
+}
+
+.sliderArea {
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+header{
+    width: 100%;
+    background-color: #434343;
+}
+
+.navMenuBox{
+    width: 15%;
+    background-color: #C6C6C6;
+}
+
+.menuText{
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    border: solid 1px black;
+}
+
+.menuText p{
+    margin: 0.5rem;
+}
+
+.rightText{
+    text-align: right;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.menuImg{
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.leftImg{
+    width: 90%;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    vertical-align: top;
+    
+}
+.mainContentsRight{
+    width: 85%;
+}
+
+.photoAndMovie{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+.photoBox{
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.photoDownLeftImg{
+    width: 50%;
+}
+
+.photoDownLeft{
+    width: 100%;
+}
+
+.movieBox{
+    width: 100%;
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+.newsBox{
+    width: 100%;
+    height: 17rem;
+    background-color: #7B7B7B;
+    color: #fff;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.newsTitleRapper{
+    width: 30%;
+    height: 17rem;
+    position: relative;
+}
+
+.newsTitleRapper::after{
+    content: '';
+    width: 0.1rem;
+    height: 13rem;
+    display: inline-block;
+    background-color:#fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+}
+
+.newsTitle{
+    width: 80%;
+    display: table;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+.newsTitleText{
+    height: 14rem;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.newsTitleTextLine{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.newsTitleTextLine::after{
+    content: '';
+    width: 3rem;
+    height: 2px;
+    display: inline-block;
+    background-color:#fff;
+    position: absolute;
+    bottom: -5px;
+    left: calc(65% - 50px)
+}
+
+
+.newsList{
+    width: 70%;
+    height: 10rem;
+    margin-left: 5rem;
+}
+
+.newListText{
+    line-height:3rem;
+}
+
+.infoBox{
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.infoTitle{
+    width: 95%;
+    position: relative;
+    padding-left: 0.5rem;
+    border-top: 25px solid #b0824d;;
+    border-bottom: 25px solid #b0824d;;
+    border-left: 0px solid #b0824d;
+    border-right: 15px solid transparent;
+}
+
+.infoTitleText{
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.infoImg{
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.infoLeftImg{
+    width: 100%;
+}
+
+.infoText{
+    width: 100%;
+}
+
+.infoTextMain{
+    width: 90%;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+}
+
+.infoButton{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.infoButtonLeft{
+    width: 10rem;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #A29453;
+    text-align: center;
+    box-shadow: 0 0 8px gray;
+    cursor: pointer;
+}
+
+.infoButtonRight{
+    width: 10rem;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #A29453;
+    text-align: center;
+    box-shadow: 0 0 8px gray;
+    cursor: pointer;
+}
+
+.shopBox{
+    width: 100%;
+    background-color: #7B7B7B;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.shopImgBoxRapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.shopImgBox{
+    width: 14rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.shopImg{
+    width: 14rem;
+}
+
+.shopImgDeco{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: 0 0;
+    vertical-align: top;
+}
+
+.shopText{
+    width: 14rem;
+    height: 3rem;
+    background-color: #fff;
+    font-weight: bold;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.buttonBox{
+    width: 100%;
+}
+
+.shopButton{
+    width: 40%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    background-color: #EB68A0 ;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    box-shadow: inset 3px 3px 2px 0px rgb(255 255 255 / 20%), inset -3px -3px 2px 0px rgb(0 0 0 / 50%);
+}
+
+/* モーダルウィンドウ設置ボタン*/
+.infoButtonTokyo{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #A29453;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 8px gray;
+    cursor: pointer;
+}
+
+/*モーダルウィンドウの設定*/
+.modalWindow{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 450px;
+    background-image: url(../img/IMG_0444.jpeg);
+    background-size: cover;
+    z-index: 11;
+    padding: 2rem;
+}
+
+.closeButton{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0,0,0, 0);
+}
+
+.closeButtonIcon{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+
+}
+
+.closeButtonIcon::before,.closeButtonIcon::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.closeButtonIcon::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.closeButtonIcon::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.overlayBox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.infoButtonTextDeco{
+    position: relative;
+    font-size: 1rem;
+    line-height:0.5rem;
+
+}
+
+.infoButtonTextDeco::before,.infoButtonTextDeco::after{
+    position: absolute;
+    content: "□";
+	width: 4px;
+	height: 4px;
+	color: #FFF;
+}
+
+.infoButtonTextDeco::before{
+    right: 50px;
+    top: 0;
+}
+
+.infoButtonTextDeco::after{
+    right: 45px;
+    top: 5px;
+}
+
+
+
+.infoBox2{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.infoText2{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.infoTextMain2{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.infoImg2{
+    width:40%;
+}
+
+.infoRightImg{
+    width: 90%;
+}
+
+.shopBox{
+    width: 100%;
+}
+
+.shopimgboxrapper{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoptext{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.wantbutton{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    line-height:2rem;
+    background-color: #EB68A0 ;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 3px solid #fff;
+    box-shadow: inset 3px 3px 2px 0px rgb(255 255 255 / 20%), inset -3px -3px 2px 0px rgb(0 0 0 / 50%);    
+}
+
+.japaninfolist{
+    width: 100%;
+    background-color: #A29453;
+    box-shadow: 0 0 8px gray;
+}
+
+.japanTextDeco{
+    color: #FFF;
+    text-align: center;
+    line-height:3rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.japanTextDeco::after{
+    position:absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 0px;
+    border-top: solid 2px #FFF;
+    border-right: solid 2px #FFF;
+    transform: rotate(45deg);
+    top:50%;
+    right: 50px;
+    margin-top: -4px;
+}
+
+footer{
+    width: 100%;
+    background-color: #434343;
+}
+
+.buttom{
+    width: 100%;
+    text-align: center;
+}
+
+.footerLogo{
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    vertical-align: top;
+}
+
+.addressbox{
+    width: 100%;
+    color: #FFF;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.dummyBox{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+
+
+@media screen and (max-width:600px){
+
+body{
+    width: 100%;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburgerMenu {
+    display : block;
+    position: fixed;
+    z-index : 3;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+.hamburgerMenuButtom {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #FFF;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+}
+
+.hamburgerMenuButtom:nth-child(1) {
+    top: 10px;
+}
+.hamburgerMenuButtom:nth-child(2) {
+    top: 20px;
+}
+.hamburgerMenuButtom:nth-child(3) {
+    top: 30px;
+}
+
+  /* ナビ開いてる時のボタン */
+.hamburgerMenu.active .hamburgerMenuButtom:nth-child(1) {
+    top : 16px;
+    left: 6px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+}
+
+.hamburgerMenu.active .hamburgerMenuButtom:nth-child(2),
+.hamburgerMenu.active .hamburgerMenuButtom:nth-child(3) {
+    top: 16px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+}
+
+.hamburgerMenuSP {
+    display: block;
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+}
+
+.hamburgerMenuSP ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.hamburgerMenuSP ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+}
+.hamburgerMenuSP ul li:last-child {
+    padding-bottom: 0;
+}
+.hamburgerMenuSP ul li:hover{
+    background :#ddd;
+}
+
+.hamburgerMenuSP ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration :none;
+}
+
+.hamburgerMenuSP ul li a:hover{
+    color: #000;
+    opacity: 1;
+}
+
+  /* このクラスを、jQueryで付与・削除する */
+.hamburgerMenuSP.active {
+    opacity: 100;
+
+}
+
+
+}

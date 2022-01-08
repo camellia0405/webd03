@@ -22,10 +22,10 @@
 
     <nav class="hamburgerMenuSP">
         <ul>
-            <li><a href="#">top</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">accese</a></li>
-            <li><a href="#">help</a></li>
+            <li class="underLine"><a href="#">top</a></li>
+            <li class="underLine"><a href="#">about</a></li>
+            <li class="underLine"><a href="#">accese</a></li>
+            <li class="underLine"><a href="#">help</a></li>
     
         </ul>
     </nav>
@@ -96,6 +96,19 @@
                         </div><!--右側下の写真終了-->
                     </div>
                 </div><!--上部写真ボックス終了-->
+                <div class="photoBoxsliderSP">
+                    <div class="sliderMenu"><!-- slider_menu -->
+                        <div class="sliderArea"><!-- slider_area -->
+                            <div class="photoBoxSP"><!-- photoBoxSP -->
+                                <div><img src="../img/sp_img_01.png" alt="SPイメージ1"></div>
+                                <div><img src="../img/sp_img_02.png" alt="SPイメージ2"></div>
+                                <div><img src="../img/sp_img_03.png" alt="SPイメージ3"></div>
+                                <div><img src="../img/sp_img_04.png" alt="SPイメージ4"></div>
+                            </div><!-- photoBoxSP -->
+                        </div><!-- slider_area -->
+                    </div><!-- slider_menu -->
+                </div>
+    
                 
                 <div class="movieBox"><!--Youtube-->
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3xqvrazVkuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,19 +134,23 @@
 
         <div class="infoBox"><!--赤平紹介-->
             <div class="infoImg"><!--赤平紹介画像-->
-                <img class="infoLeftImg" src="../img/pc_img_05.png" alt="">
+            <div class="infoLeftImg"></div>
             </div><!--赤平紹介画像終了-->
             <div class="infoText"><!--赤平紹介Text-->
+
                 <div class="infoTitle"><span class="infoTitleText">赤平よいとこ一度はおいで</span></div>
                 <div class="infoTextMain">
                     <p>北海道赤平市は北海道出身者が出演する某人気テレビ番組の影響でここ数年で知名度が急上昇。
                     <br>ドラマのロケ地になるほど、注目を集めています。</p>
-</div>
+                </div>
+                <div class="infoImgSP"><!--赤平紹介画像-->
+                    <div class="infoLeftImg"></div>
+                </div><!--赤平紹介画像終了-->
                 <div class="infoButton">
                     <div class="infoButtonLeft"><a href="#">もっと知りたい</a></div>
                     <div class="infoButtonRight"><a href="#">今すぐ行きます</a></div>
                 </div>
-            </div>
+            </div><!--赤平紹介Text終了-->
         </div><!--赤平紹介終了-->
 
         <div class="shopBox"><!--ショップ画像三つメルカソ-->
@@ -141,25 +158,39 @@
                 <div class="shopImgBox">
                     <div class="shopImg"><img class="shopImgDeco" src="../img/buildingjpeg.jpeg" alt=""></div>
                     <div class="shopText">マンション買うならいくら？</div>
+                    <div class="buttonBoxSP">
+                        <div class="shopButton"><p><a href="#">欲しい</a></p></div>
+                    </div>
                 </div>
                 <div class="shopImgBox">
                     <div class="shopImg"><img class="shopImgDeco" src="../img/pc_img_07.png" alt=""></div>
                     <div class="shopText">あの時買えばよかったアレ</div>
+                    <div class="buttonBoxSP">
+                        <div class="shopButton"><p><a href="#">欲しい</a></p></div>
+                    </div>
                 </div>
+
                 <div class="shopImgBox">
                     <div class="shopImg"><img class="shopImgDeco" src="../img/pc_img_08.png" alt=""></div>
                     <div class="shopText">売る気のないメルカソ特集</div>
+                    <div class="buttonBoxSP">
+                        <div class="shopButton"><p><a href="#">欲しい</a></p></div>
+                    </div>
                 </div>
             </div>
 
             <div class="buttonBox">
-                <div class="shopButton"><p>メルカソで買い物をする</p></div>
+                <div class="shopButton"><p><a href="#">メルカソで買い物をする</a></p></div>
             </div>
 
         </div><!--ショップ画像三つメルカソ終了-->
 
         <div class="infoBox2"><!--東京紹介-->
+
             <div class="infoText2"><!--東京紹介Text-->
+                <div class="infoImgSP"><!--東京紹介画像-->
+                    <img class="infoRightImg" src="../img/pc_img_09.png" alt="">
+                </div><!--東京紹介画像終了-->
                 <div class="infoTitle"><span class="infoTitleText">東京の空も悪くない</span></div>
                 <div class="infoTextMain2">
                     <p>東京は空が狭い。<br>
@@ -170,7 +201,7 @@
                 </div>
                 <div class="infoButton">
                     <div id="jsOpen" class="infoButtonTokyo">
-                        <p class="infoButtonTextDeco">空の写真をもっとみる。</p>
+                        <p class="infoButtonTextDeco"><a href="#">空の写真をもっとみる。</a></p>
                     </div>
                 </div>
                 <!--ここから、モーダルウィンドウ-->
@@ -192,14 +223,14 @@
         <div class="shopBox"><!--ショップ画像二つメルカソ-->
             <div class="shopimgboxrapper">
                 <div class="shopimgbox">
-                    <div class="shopimg"><img src="../img/pc_img_08.png" alt=""></div>
+                    <div class="shopimg"><img calss="shopImgSP" src="../img/pc_img_08.png" alt=""></div>
                     <div class="shoptext">未使用ZIPPO</div>
-                    <div class="wantbutton">欲しい</div>
+                    <div class="wantbutton"><a href="#">欲しい</a></div>
                 </div>
                 <div class="shopimgbox">
-                    <div class="shopimg"><img src="../img/pc_img_08.png" alt=""></div>
+                    <div class="shopimg"><img calss="shopImgSP" src="../img/pc_img_08.png" alt=""></div>
                     <div class="shoptext">モノリスオルゴール</div>
-                    <div class="wantbutton">欲しい</div>
+                    <div class="wantbutton"><a href="#">欲しい</a></div>
                 </div>
             </div>
         </div><!--ショップ画像二つメルカソ終了-->
@@ -211,9 +242,9 @@
             <div class="infoText"><!--ext-->
                 <div class="infoTitle"><span class="infoTitleText">日本に生まれてよかったでしょ</span></div>
                 <div class="infoTextMain"><p>海外旅行に行く度思うこと。「日本のご飯が食べたい。」食べなれているものだからということもあるだろうけれど、それだけじゃないよね。</p></div>
-                <div class="japaninfolist"><p class="japanTextDeco">カレーを食べたい</p></div>
-                <div class="japaninfolist"><p class="japanTextDeco">今日はラーメン</p></div>
-                <div class="japaninfolist"><p class="japanTextDeco">デート前だから今日はガマン</p></div>
+                <div class="japaninfolist"><p class="japanTextDeco"><a href="#">カレーを食べたい</a></p></div>
+                <div class="japaninfolist"><p class="japanTextDeco"><a href="#">今日はラーメン</a></p></div>
+                <div class="japaninfolist"><p class="japanTextDeco"><a href="#">デート前だから今日はガマン</a></p></div>
             </div>
         </div><!--終了-->
         <div class="dummyBox"></div>

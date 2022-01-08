@@ -1,11 +1,14 @@
 @charset "utf-8";
 
-body{
-    width: 960px;
-    margin: 0 auto;
-
+*{
+    margin: 0;
+    padding: 0;
 }
 
+body{
+    max-width:950px;
+    margin: 0 auto;
+}
 
 a{
     text-decoration: none ;
@@ -21,6 +24,10 @@ a:hover{
 }
 
 .hamburgerMenuButtom {
+    display: none;
+}
+
+.hamburgerClose{
     display: none;
 }
 
@@ -123,6 +130,10 @@ header{
     
 }
 
+.photoBoxsliderSP{
+    display: none;
+}
+
 .photoBox{
     width: 100%;
     display: flex;
@@ -143,6 +154,7 @@ header{
     margin-top: 5rem;
 }
 
+/*新着情報*/
 .newsBox{
     width: 100%;
     height: 17rem;
@@ -250,10 +262,15 @@ header{
 
 .infoLeftImg{
     width: 100%;
+    height: 100%;
+    background-image: url(../img/pc_img_05.png);
+    background-repeat: no-repeat;
 }
 
 .infoText{
     width: 100%;
+    background-color: #FFF;
+
 }
 
 .infoTextMain{
@@ -290,7 +307,7 @@ header{
     box-shadow: 0 0 8px gray;
     cursor: pointer;
 }
-
+/*メルカソで買い物*/
 .shopBox{
     width: 100%;
     background-color: #7B7B7B;
@@ -348,6 +365,10 @@ header{
     font-weight: bold;
     border: 3px solid #fff;
     box-shadow: inset 3px 3px 2px 0px rgb(255 255 255 / 20%), inset -3px -3px 2px 0px rgb(0 0 0 / 50%);
+}
+
+.buttonBoxSP{
+    display: none;
 }
 
 /* モーダルウィンドウ設置ボタン*/
@@ -429,7 +450,7 @@ header{
 .infoButtonTextDeco{
     position: relative;
     font-size: 1rem;
-    line-height:0.5rem;
+    line-height:2rem;
 
 }
 
@@ -476,6 +497,10 @@ header{
     width:40%;
 }
 
+.infoImgSP{
+    display: none;
+}
+
 .infoRightImg{
     width: 90%;
 }
@@ -515,6 +540,7 @@ header{
 
 .japaninfolist{
     width: 100%;
+    margin-top: 1rem;
     background-color: #A29453;
     box-shadow: 0 0 8px gray;
 }
@@ -572,9 +598,15 @@ footer{
 
 
 
-@media screen and (max-width:600px){
+@media only screen and (max-width: 600px){
 
 body{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.mainContentsRight{
     width: 100%;
 }
 
@@ -584,7 +616,7 @@ body{
     position: fixed;
     z-index : 3;
     right : 13px;
-    top   : 12px;
+    top   : 50px;
     width : 42px;
     height: 42px;
     cursor: pointer;
@@ -602,6 +634,10 @@ body{
     transition        : 0.3s ease-in-out;
 }
 
+#hamburgerClose{
+    display : none;
+}
+
 .hamburgerMenuButtom:nth-child(1) {
     top: 10px;
 }
@@ -612,30 +648,47 @@ body{
     top: 30px;
 }
 
+.hamburgerMenu::after{
+    content: "menu";
+    color: #FFF;
+    position: fixed;
+    right : 13px;
+    top   : 80px;
+    width : 42px;
+    height: 42px;
+}
+
   /* ナビ開いてる時のボタン */
 .hamburgerMenu.active .hamburgerMenuButtom:nth-child(1) {
     top : 16px;
     left: 6px;
     background :#fff;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform   : rotate(-45deg);
-    transform        : rotate(-45deg);
+    transform        : rotate(-30deg);
 }
 
 .hamburgerMenu.active .hamburgerMenuButtom:nth-child(2),
 .hamburgerMenu.active .hamburgerMenuButtom:nth-child(3) {
     top: 16px;
     background :#fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform   : rotate(45deg);
-    transform        : rotate(45deg);
+    transform        : rotate(30deg);
 }
+
+.hamburgerMenu.active::after{
+    content: "close";
+    color: #FFF;
+    position: fixed;
+    right : 13px;
+    top   : 80px;
+    width : 42px;
+    height: 42px;
+}
+
 
 .hamburgerMenuSP {
     display: block;
     position: fixed;
     z-index : 2;
-    top  : 0;
+    top  : 134px;
     left : 0;
     color: #fff;
     background: rgba(0,0,0,0.7);
@@ -676,11 +729,320 @@ body{
     opacity: 1;
 }
 
+.underLine{
+    position: relative;
+}
+
+.underLine::after{
+    content:"";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #FFF;
+    position:absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
   /* このクラスを、jQueryで付与・削除する */
 .hamburgerMenuSP.active {
     opacity: 100;
 
 }
 
+header{
+    width: 100%;
+    text-align: center;
+}
+
+.topLogo{
+    width: 100%;
+    vertical-align: top;
+}
+
+.navMenuBox{
+    display: none;
+}
+
+.photoBox{
+    display: none;
+}
+
+.photoBoxsliderSP{
+    display: block;
+}
+
+.slick-slide{
+    height:auto!important;
+}
+
+/*-----------矢印表示----------*/
+.slick-next{
+    right:30px!important;
+}
+.slick-next:before{
+    background: url(../img/arrow_r.png)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}
+.slick-prev{
+    left:-30px!important;
+}
+.slick-prev:before{
+    background: url(../img/arrow_l.png)!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}
+.slick-arrow{
+    z-index:2 !important;
+    width:60px!important;
+    height:60px!important;
+}
+.slick-arrow:before{
+    content:""!important;
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    opacity:1!important;
+}
+
+.shopImgBoxRapper{
+    flex-direction: column;
+}
+
+.shopimgboxrapper{
+    flex-direction: column;
+}
+
+.mainContents{
+    flex-direction: column;
+}
+
+.newsBox{
+    flex-direction: column;
+}
+
+.infoBox,.infoBox2{
+    flex-direction: column;
+}
+
+/*新着情報*/
+.newsBox{
+    width: 100%;
+    height: 22rem;
+    background-color: #7B7B7B;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.newsTitleRapper{
+    width: 50%;
+    height: 5rem;
+    margin: 0 auto;
+    border-bottom: #FFF solid 2px;
+}
+
+.newsTitleRapper::after{
+    content: none;
+}
+
+.newsTitleText{
+    width: 100%;
+    height: 10%;
+}
+
+.newsTitleTextLine{
+    width: 5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.newsTitleTextLine::after{
+    width: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+
+.newsList{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.newListText{
+
+}
+
+.infoImg{
+    width: 100%;
+}
+
+.infoTitle{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shopImgBoxRapper{
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.buttonBox{
+    display: none;
+}
+
+.buttonBoxSP{
+    display: block;
+
+}
+
+.shopButton{
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 50px;
+}
+
+.infoBox2{
+    width: 100%;
+    flex-direction: column;
+}
+
+.infoText2{
+    width: 100%;
+}
+
+.infoImg2{
+    display: none;
+
+}
+
+.infoImgSP{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.infoRightImg{
+    width: 90%;
+    height: 15rem;
+    object-fit: cover;
+    vertical-align: top; 
+}
+
+.infoText{
+    width: 100%;
+}
+
+.infoTextMain{
+    margin-top: 1rem;
+}
+
+.infoButton{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.infoTitle{
+    width: 85%;
+    position: relative;
+    padding-left: 0.5rem;
+    border-top: 25px solid #b0824d;;
+    border-bottom: 25px solid #b0824d;;
+    border-left: 0px solid #b0824d;
+    border-right: 15px solid transparent;
+}
+
+.infoTitleText{
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.infoTextMain2{
+    padding: 2.5rem;
+}
+
+.infoButtonTokyo{
+    width: 70%;
+}
+
+.infoButtonTextDeco{
+    position: relative;
+    font-size: 1rem;
+    line-height:2rem;
+
+}
+
+.infoButtonTextDeco::before,.infoButtonTextDeco::after{
+    position: absolute;
+    content: "□";
+	width: 4px;
+	height: 4px;
+	color: #FFF;
+}
+
+.infoButtonTextDeco::before{
+    right: 50px;
+    top: 0;
+}
+
+.infoButtonTextDeco::after{
+    right: 45px;
+    top: 5px;
+}
+
+
+
+.shopBox{
+    width: 100%;
+}
+.shopimgboxrapper{
+    width: 100%;
+}
+
+.shopimgbox{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shopImgSP{
+    width: 100%;
+}
+
+.shopimg{
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.shoptext{
+    text-align: center;
+}
+
+.wantbutton{
+    width: 12rem;
+}
+
+.infoImg{
+    margin: 0 auto
+}
+
+.pcImg{
+    margin-bottom: 1rem;
+}
 
 }

@@ -9,6 +9,19 @@ $(document).on('ready', function() {
     });
   });
 
+  $(document).on('ready', function() {
+    $(".photoBoxSP").slick({
+      arrows: false,
+      autoplay: true,
+      adaptiveHeight: true,
+      centerMode: true,
+      centerPadding: "15%",
+      dots: false,
+      arrows:true,
+    });
+  });
+
+
 $(function () {
     $('#jsOpen').click(function () {
       $('#overlayBox, .modalWindow').fadeIn();
@@ -26,18 +39,6 @@ $(function() {
             $('.hamburgerMenuSP').addClass('active');
         } else {
             $('.hamburgerMenuSP').removeClass('active');
-        }
-    });
-  });
-
-  $(function() {
-    $('.hamburgerMeosnuClose').click(function() {
-        $(this).toggleClass('hamburgerMeosnuClick');
-
-        if ($(this).hasClass('hamburgerMeosnuClick')) {
-            $('.hamburgerMeosnuClose').addClass('hamburgerMeosnuClick');
-        } else {
-            $('.hamburgerMeosnuClose').removeClass('hamburgerMeosnuClick');
         }
     });
   });

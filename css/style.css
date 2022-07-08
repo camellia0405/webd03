@@ -1087,26 +1087,31 @@ header{
 .shopBox{
     width: 100%;
 }
-.shopimgboxrapper{
+.shopImgBoxRapper{
     width: 100%;
 }
 
-.shopimgbox{
+.shopImgBox{
     width: 100%;
-    margin: 0 auto;
+    flex-direction: column;
 }
 
 .shopImgSP{
     width: 100%;
 }
 
-.shopimg{
-    width: 100%;
-    padding-top: 1rem;
+.shopImg{
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
 }
 
-.shoptext{
+.shopButton{
+    width: 50%;
+}
+
+.shopText{
+    width: 50%;
     text-align: center;
 }
 
